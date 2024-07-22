@@ -30,6 +30,13 @@ function colorBlack(e) {
 function colorWhite(e) {
   e.target.style.backgroundColor = "white";
 }
+function randomColor(e) {
+  const red = Math.floor(Math.random() * 256) + 1;
+  const green = Math.floor(Math.random() * 256) + 1;
+  const blue = Math.floor(Math.random() * 256) + 1;
+
+  e.target.style.backgroundColor = `rgb(${red},${green},${blue})`;
+}
 function mouseHover() {
   const items = document.querySelectorAll("#item");
   items.forEach((item) => {
@@ -47,13 +54,6 @@ function showGridSliderValue() {
 }
 showGridSliderValue();
 
-function randomColor() {
-  const red = Math.floor(Math.random() * 256) + 1;
-  const green = Math.floor(Math.random() * 256) + 1;
-  const blue = Math.floor(Math.random() * 256) + 1;
-
-  return `rgb(${red},${green},${blue})`;
-}
 function disabledCheckbox() {
   colorPick.disabled = true;
   randomRGB.disabled = true;
