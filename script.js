@@ -3,6 +3,12 @@ const gridContainer = document.querySelector("#grid-container");
 const gridSlider = document.querySelector("#grid-range");
 const textSlider = document.querySelector("#text");
 const enterBtn = document.querySelector("#enter");
+const colorPick = document.querySelector("#favcolor");
+const randomRGB = document.querySelector("#random-color");
+const progDarkening = document.querySelector("#prog-darkening");
+const eraser = document.querySelector("#eraser");
+const hover = document.querySelector("#hover");
+const hold = document.querySelector("#hold");
 
 function createItems() {
   for (let i = 1; i <= gridSlider.value * gridSlider.value; i++) {
