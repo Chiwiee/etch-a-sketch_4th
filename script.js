@@ -4,7 +4,7 @@ const gridSlider = document.querySelector("#grid-range");
 const textSlider = document.querySelector("#text");
 
 function createSquare() {
-  for (let i = 1; i <= userInput * userInput; i++) {
+  for (let i = 1; i <= gridSlider.value * gridSlider.value; i++) {
     const square = document.createElement("div");
     square.id = "square";
     gridContainer.appendChild(square);
