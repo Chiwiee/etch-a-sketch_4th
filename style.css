@@ -8,11 +8,10 @@ body {
   font-weight: 500;
   font-style: normal;
   line-height: 1.2;
-  background-color: #000000;
 }
 #main-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 960px;
@@ -39,8 +38,14 @@ body {
 #grid-container > #square:hover {
   background-color: #ff00009f;
 }
+#value-container {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 600px;
+}
 #slider-container {
-  width: 100%;
+  flex: 1 1 100%;
 }
 .slider {
   -webkit-appearance: none;
