@@ -71,10 +71,10 @@ function disabledCheckbox() {
 function enabledCheckbox() {
   colorPick.disabled = false;
   randomRGB.disabled = false;
-  progDarkening.disabled = true;
+  progDarkening.disabled = false;
   eraser.disabled = false;
   hover.disabled = false;
-  hold.disabled = true;
+  hold.disabled = false;
 }
 function enter() {
   while (gridContainer.hasChildNodes()) {
