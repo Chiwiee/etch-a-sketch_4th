@@ -40,11 +40,14 @@ function randomColor(e) {
 function pickingColor(e) {
   e.target.style.backgroundColor = colorPick.value;
 }
+// function progDarkeningColor(e) {
+//   e.target.style.opacity = 0.1;
+// }
 function mouseHover() {
   const items = document.querySelectorAll("#item");
   items.forEach((item) => {
     item.addEventListener("mouseover", (e) => {
-      pickingColor(e);
+      colorBlack(e);
     });
   });
 }
