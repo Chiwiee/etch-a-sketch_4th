@@ -23,7 +23,7 @@ body {
   background-color: #000000;
 }
 #title > div {
-  color: #000000;
+  color: #ffff;
   font-size: 70px;
 }
 #grid-container {
@@ -85,7 +85,7 @@ body {
   cursor: pointer;
 }
 #text-content > p {
-  color: #000000;
+  color: #ffff;
   font-size: 40px;
   font-weight: 500;
 }
