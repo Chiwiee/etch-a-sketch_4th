@@ -27,6 +27,9 @@ function colorBlack(e) {
   e.target.style.backgroundColor = "black";
 }
 
+function colorWhite(e) {
+  e.target.style.backgroundColor = "white";
+}
 function mouseHover() {
   const items = document.querySelectorAll("#item");
   items.forEach((item) => {
