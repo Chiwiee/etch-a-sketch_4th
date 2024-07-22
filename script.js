@@ -91,3 +91,10 @@ function enter() {
   createItems();
   mouseHover();
 }
+
+console.log(colorPick);
+console.log(progColor);
+console.log(eraser);
+console.log(randomRGB);
+console.log(hover);
+console.log(hold);
