@@ -23,7 +23,7 @@ function divideBySliderValue() {
   return 100 / gridSlider.value;
 }
 
-function hoverEffect(e) {
+function colorBlack(e) {
   e.target.style.backgroundColor = "black";
 }
 
