@@ -17,9 +17,8 @@ function hoverEffect(e) {
   e.target.style.backgroundColor = "black";
 }
 
-const square = document.querySelectorAll("#square");
-
 function mouseHover() {
+  const square = document.querySelectorAll("#square");
   square.forEach((item) => {
     item.addEventListener("mouseover", (e) => {
       hoverEffect(e);
