@@ -35,3 +35,6 @@ body {
   background-color: #ffff;
   border: 1px solid black;
 }
+#grid-container > #square:hover {
+  background-color: #ff00009f;
+}
