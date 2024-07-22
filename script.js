@@ -51,6 +51,12 @@ function randomColor() {
 
   return `rgb(${red},${green},${blue})`;
 }
+colorPick.disabled = true;
+randomRGB.disabled = true;
+progDarkening.disabled = true;
+eraser.disabled = true;
+hover.disabled = true;
+hold.disabled = true;
 
 function enter() {
   while (gridContainer.hasChildNodes()) {
