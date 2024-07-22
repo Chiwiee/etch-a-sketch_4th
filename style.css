@@ -11,9 +11,9 @@ body {
 }
 #main-container {
   display: flex;
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
   height: 960px;
   width: 1400px;
   border: 1px solid #000000;
