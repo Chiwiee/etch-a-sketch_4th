@@ -49,12 +49,12 @@ function showGridSliderValue() {
   textSlider.textContent = `${gridSlider.value} x ${gridSlider.value}`;
   gridSlider.oninput = function () {
     textSlider.textContent = `${gridSlider.value} x ${gridSlider.value}`;
-    enter();
+    generateItems();
   };
 }
 showGridSliderValue();
 
-function enter() {
+function generateItems() {
   while (gridContainer.hasChildNodes()) {
     gridContainer.removeChild(gridContainer.children[0]);
   }
@@ -68,5 +68,5 @@ console.log(eraser);
 console.log(randomRGB);
 console.log(hover);
 console.log(hold);
-
+console.log(gridContainer);
 progColor.disabled = true;
