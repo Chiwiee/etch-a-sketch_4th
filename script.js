@@ -5,7 +5,7 @@ const textSlider = document.querySelector("#text");
 const enterBtn = document.querySelector("#enter");
 const square = document.querySelectorAll("#square");
 
-function createSquare() {
+function createItems() {
   for (let i = 1; i <= gridSlider.value * gridSlider.value; i++) {
     const item = document.createElement("div");
     item.id = "item";
