@@ -38,8 +38,12 @@ function showGridSliderValue() {
 }
 showGridSliderValue();
 
-function randomNumber() {
-  return Math.floor(Math.random() * 256) + 1;
+function randomColor() {
+  const red = Math.floor(Math.random() * 256) + 1;
+  const green = Math.floor(Math.random() * 256) + 1;
+  const blue = Math.floor(Math.random() * 256) + 1;
+
+  return `rgb(${red},${green},${blue})`;
 }
 
 function enter() {
@@ -48,4 +52,5 @@ function enter() {
   }
   createItems();
   mouseHover();
+  alert(randomColor());
 }
