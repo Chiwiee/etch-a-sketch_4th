@@ -31,9 +31,6 @@ body {
   flex-wrap: wrap;
   height: 600px;
   width: 600px;
-  border: 1px solid #000000;
-  background-color: #000000;
-  border-radius: 10px;
 }
 #grid-container > #item {
   flex-grow: 1;
