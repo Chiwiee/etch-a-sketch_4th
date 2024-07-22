@@ -7,10 +7,15 @@ function createSquare() {
   for (let i = 1; i <= gridSlider.value * gridSlider.value; i++) {
     const square = document.createElement("div");
     square.id = "square";
+    square.style.flexBasis = divideBySliderValue();
     gridContainer.appendChild(square);
   }
 }
 createSquare();
+
+function divideBySliderValue() {
+  return 100 / gridSlider.value;
+}
 
 function hoverEffect(e) {
   e.target.style.backgroundColor = "black";
