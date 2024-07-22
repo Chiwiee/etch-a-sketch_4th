@@ -4,11 +4,11 @@ const gridSlider = document.querySelector("#grid-range");
 const textSlider = document.querySelector("#text");
 const enterBtn = document.querySelector("#enter");
 const colorPick = document.querySelector("#favcolor");
-const randomRGB = document.querySelector(".random");
-const progColor = document.querySelector(".prog-color");
-const eraser = document.querySelector(".eraser");
-const hover = document.querySelector(".hover");
-const hold = document.querySelector(".hold");
+const randomRGB = document.querySelector("#random");
+const progColor = document.querySelector("#prog-color");
+const eraser = document.querySelector("#eraser");
+const hover = document.querySelector("#hover");
+const hold = document.querySelector("#hold");
 
 function createItems() {
   for (let i = 1; i <= gridSlider.value * gridSlider.value; i++) {
