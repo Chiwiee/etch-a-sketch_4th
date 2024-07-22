@@ -68,7 +68,6 @@ function disabledCheckbox() {
   hover.disabled = true;
   hold.disabled = true;
 }
-disabledCheckbox();
 function enabledCheckbox() {
   colorPick.disabled = false;
   randomRGB.disabled = false;
@@ -78,8 +77,6 @@ function enabledCheckbox() {
   hold.disabled = true;
 }
 function enter() {
-  enabledCheckbox();
-
   while (gridContainer.hasChildNodes()) {
     gridContainer.removeChild(gridContainer.children[0]);
   }
