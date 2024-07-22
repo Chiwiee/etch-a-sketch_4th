@@ -37,11 +37,14 @@ function randomColor(e) {
 
   e.target.style.backgroundColor = `rgb(${red},${green},${blue})`;
 }
+function pickingColor(e) {
+  e.target.style.backgroundColor = colorPick.value;
+}
 function mouseHover() {
   const items = document.querySelectorAll("#item");
   items.forEach((item) => {
     item.addEventListener("mouseover", (e) => {
-      colorBlack(e);
+      pickingColor(e);
     });
   });
 }
