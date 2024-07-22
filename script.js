@@ -29,7 +29,6 @@ function mouseHover() {
     });
   });
 }
-mouseHover();
 
 function showGridSliderValue() {
   textSlider.textContent = `${gridSlider.value} x ${gridSlider.value}`;
@@ -41,4 +40,5 @@ showGridSliderValue();
 
 function enter() {
   createItems();
+  mouseHover();
 }
