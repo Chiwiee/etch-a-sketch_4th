@@ -59,6 +59,12 @@ hover.disabled = true;
 hold.disabled = true;
 
 function enter() {
+  colorPick.disabled = false;
+  randomRGB.disabled = false;
+  progDarkening.disabled = true;
+  eraser.disabled = false;
+  hover.disabled = false;
+  hold.disabled = true;
   while (gridContainer.hasChildNodes()) {
     gridContainer.removeChild(gridContainer.children[0]);
   }
