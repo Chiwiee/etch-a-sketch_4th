@@ -60,14 +60,17 @@ function disabledCheckbox() {
   hold.disabled = true;
 }
 disabledCheckbox();
-
-function enter() {
+function enabledCheckbox() {
   colorPick.disabled = false;
   randomRGB.disabled = false;
   progDarkening.disabled = true;
   eraser.disabled = false;
   hover.disabled = false;
   hold.disabled = true;
+}
+function enter() {
+  enabledCheckbox();
+
   while (gridContainer.hasChildNodes()) {
     gridContainer.removeChild(gridContainer.children[0]);
   }
