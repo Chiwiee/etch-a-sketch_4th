@@ -12,7 +12,7 @@ function createItems() {
     gridContainer.appendChild(item);
   }
 }
-
+createItems();
 function divideBySliderValue() {
   return 100 / gridSlider.value;
 }
@@ -39,6 +39,9 @@ function showGridSliderValue() {
 showGridSliderValue();
 
 function enter() {
+  while (gridContainer.hasChildNodes()) {
+    gridContainer.removeChild(gridContainer.children[0]);
+  }
   createItems();
   mouseHover();
 }
