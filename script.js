@@ -40,5 +40,5 @@ function showGridSliderValue() {
 showGridSliderValue();
 
 function enter() {
-  createSquare();
+  createItems();
 }
