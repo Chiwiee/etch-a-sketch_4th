@@ -12,6 +12,10 @@ function createSquare() {
 }
 createSquare();
 
+function hoverEffect(e) {
+  e.target.style.backgroundColor = "black";
+}
+
 const square = document.querySelectorAll("#square");
 
 square.forEach((item) => {
@@ -19,6 +23,3 @@ square.forEach((item) => {
     hoverEffect(e);
   });
 });
-function hoverEffect(e) {
-  e.target.style.backgroundColor = "black";
-}
