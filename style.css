@@ -17,6 +17,7 @@ body {
   color: #ffff;
 }
 #grid-container {
+  display: flex;
   height: 800px;
   width: 800px;
   border: 1px solid black;
