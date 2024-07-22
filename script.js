@@ -7,10 +7,10 @@ const square = document.querySelectorAll("#square");
 
 function createSquare() {
   for (let i = 1; i <= gridSlider.value * gridSlider.value; i++) {
-    const square = document.createElement("div");
-    square.id = "square";
-    square.style.flexBasis = divideBySliderValue();
-    gridContainer.appendChild(square);
+    const item = document.createElement("div");
+    item.id = "item";
+    item.style.flexBasis = divideBySliderValue();
+    gridContainer.appendChild(item);
   }
 }
 createSquare();
