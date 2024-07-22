@@ -1,5 +1,6 @@
 const mainContainer = document.querySelector("#main-container");
 const gridContainer = document.querySelector("#grid-container");
+const square = document.querySelectorAll("#square");
 
 userInput = 16;
 
