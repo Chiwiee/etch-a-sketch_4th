@@ -9,6 +9,7 @@ const progColor = document.querySelector("#prog-color");
 const eraser = document.querySelector("#eraser");
 const hover = document.querySelector("#hover");
 const hold = document.querySelector("#hold");
+const btn = document.querySelectorAll("button");
 
 function createItems() {
   for (let i = 1; i <= gridSlider.value * gridSlider.value; i++) {
