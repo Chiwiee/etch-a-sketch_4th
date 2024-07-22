@@ -18,8 +18,11 @@ function hoverEffect(e) {
 
 const square = document.querySelectorAll("#square");
 
-square.forEach((item) => {
-  item.addEventListener("mouseover", (e) => {
-    hoverEffect(e);
+function mouseHover() {
+  square.forEach((item) => {
+    item.addEventListener("mouseover", (e) => {
+      hoverEffect(e);
+    });
   });
-});
+}
+mouseHover();
