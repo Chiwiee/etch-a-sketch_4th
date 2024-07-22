@@ -40,9 +40,6 @@ function randomColor(e) {
 function pickingColor(e) {
   e.target.style.backgroundColor = colorPick.value;
 }
-// function progDarkeningColor(e) {
-//   e.target.style.opacity = 0.1;
-// }
 function mouseHover() {
   const items = document.querySelectorAll("#item");
   items.forEach((item) => {
@@ -74,3 +71,5 @@ console.log(eraser);
 console.log(randomRGB);
 console.log(hover);
 console.log(hold);
+
+progColor.disabled = true;
