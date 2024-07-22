@@ -27,7 +27,7 @@ body {
   border: 1px solid #000000;
   background-color: #000000;
 }
-#grid-container > #square {
+#grid-container > #item {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 6.25%;
@@ -35,7 +35,7 @@ body {
   background-color: #ffff;
   border: 1px solid black;
 }
-#grid-container > #square:hover {
+#grid-container > #item:hover {
   background-color: #ff00009f;
 }
 #value-container {
