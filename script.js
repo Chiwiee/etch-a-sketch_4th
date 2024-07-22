@@ -41,7 +41,7 @@ function mouseHover() {
   const items = document.querySelectorAll("#item");
   items.forEach((item) => {
     item.addEventListener("mouseover", (e) => {
-      hoverEffect(e);
+      colorBlack(e);
     });
   });
 }
@@ -79,5 +79,4 @@ function enter() {
   }
   createItems();
   mouseHover();
-  alert(randomColor());
 }
