@@ -20,7 +20,7 @@ body {
   width: 1400px;
   border: 1px solid #000000;
   color: #ffff;
-  background-color: #000000;
+  background-color: rgb(40, 40, 43);
 }
 #title > div {
   color: #ffff;
