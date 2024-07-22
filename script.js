@@ -38,6 +38,10 @@ function showGridSliderValue() {
 }
 showGridSliderValue();
 
+function randomNumber() {
+  return Math.floor(Math.random() * 256) + 1;
+}
+
 function enter() {
   while (gridContainer.hasChildNodes()) {
     gridContainer.removeChild(gridContainer.children[0]);
