@@ -9,7 +9,7 @@ function createSquare() {
   for (let i = 1; i <= gridSlider.value * gridSlider.value; i++) {
     const item = document.createElement("div");
     item.id = "item";
-    item.style.flexBasis = divideBySliderValue();
+    item.style.flexBasis = `${divideBySliderValue()}%`;
     gridContainer.appendChild(item);
   }
 }
