@@ -1,6 +1,6 @@
 const mainContainer = document.querySelector("#main-container");
 const gridContainer = document.querySelector("#grid-container");
-
+const gridSlider = document.querySelector("#grid-slider");
 userInput = 16;
 
 function createSquare() {
