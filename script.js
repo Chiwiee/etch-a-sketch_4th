@@ -1,8 +1,10 @@
 const mainContainer = document.querySelector("#main-container");
 const gridContainer = document.querySelector("#grid-container");
 
+userInput = 16;
+
 function createSquare() {
-  for (let i = 1; i <= 16 * 16 || userInput * userInput; i++) {
+  for (let i = 1; i <= userInput * userInput; i++) {
     const square = document.createElement("div");
     square.id = "square";
     gridContainer.appendChild(square);
