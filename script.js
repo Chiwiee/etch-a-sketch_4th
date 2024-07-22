@@ -1,6 +1,5 @@
 const mainContainer = document.querySelector("#main-container");
 const gridContainer = document.querySelector("#grid-container");
-const square = document.querySelectorAll("#square");
 
 userInput = 16;
 
@@ -12,3 +11,14 @@ function createSquare() {
   }
 }
 createSquare();
+
+const square = document.querySelectorAll("#square");
+
+square.forEach((item) => {
+  item.addEventListener("mouseover", (e) => {
+    hoverEffect(e);
+  });
+});
+function hoverEffect(e) {
+  e.target.style.backgroundColor = "black";
+}
