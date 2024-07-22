@@ -75,3 +75,8 @@ body {
   background: rgb(157, 0, 255);
   cursor: pointer;
 }
+#text-content > p {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 500;
+}
