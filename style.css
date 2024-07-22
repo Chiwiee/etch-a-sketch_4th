@@ -81,5 +81,14 @@ body {
   font-weight: 500;
 }
 #enter {
-  color: blue;
+  font-family: "Tiny5", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 22px;
+  margin-left: 12px;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  color: #ffff;
+  background-color: rgb(174, 0, 255);
 }
