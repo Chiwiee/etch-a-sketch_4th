@@ -2,6 +2,7 @@ const mainContainer = document.querySelector("#main-container");
 const gridContainer = document.querySelector("#grid-container");
 const gridSlider = document.querySelector("#grid-range");
 const textSlider = document.querySelector("#text");
+const enterBtn = document.querySelector("#enter");
 
 function createSquare() {
   for (let i = 1; i <= gridSlider.value * gridSlider.value; i++) {
