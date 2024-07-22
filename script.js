@@ -13,7 +13,6 @@ function createSquare() {
     gridContainer.appendChild(item);
   }
 }
-createSquare();
 
 function divideBySliderValue() {
   return 100 / gridSlider.value;
@@ -39,3 +38,7 @@ function showGridSliderValue() {
   };
 }
 showGridSliderValue();
+
+function enter() {
+  createSquare();
+}
