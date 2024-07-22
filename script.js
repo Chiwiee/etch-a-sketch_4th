@@ -76,14 +76,7 @@ function enabledCheckbox() {
   hover.disabled = false;
   hold.disabled = false;
 }
-// function changingCheckedStatus() {}
-const input = document.querySelectorAll("input");
-input.forEach((input) => {
-  input.addEventListener("click", () => {
-    // changingCheckedStatus();
-    console.log(colorPick.checked);
-  });
-});
+
 function enter() {
   while (gridContainer.hasChildNodes()) {
     gridContainer.removeChild(gridContainer.children[0]);
