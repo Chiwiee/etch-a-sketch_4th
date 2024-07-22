@@ -60,23 +60,6 @@ function showGridSliderValue() {
 }
 showGridSliderValue();
 
-function disabledCheckbox() {
-  colorPick.disabled = true;
-  randomRGB.disabled = true;
-  progDarkening.disabled = true;
-  eraser.disabled = true;
-  hover.disabled = true;
-  hold.disabled = true;
-}
-function enabledCheckbox() {
-  colorPick.disabled = false;
-  randomRGB.disabled = false;
-  progDarkening.disabled = false;
-  eraser.disabled = false;
-  hover.disabled = false;
-  hold.disabled = false;
-}
-
 function enter() {
   while (gridContainer.hasChildNodes()) {
     gridContainer.removeChild(gridContainer.children[0]);
