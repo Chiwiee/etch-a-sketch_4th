@@ -3,6 +3,7 @@ const gridContainer = document.querySelector("#grid-container");
 const gridSlider = document.querySelector("#grid-range");
 const textSlider = document.querySelector("#text");
 const enterBtn = document.querySelector("#enter");
+const square = document.querySelectorAll("#square");
 
 function createSquare() {
   for (let i = 1; i <= gridSlider.value * gridSlider.value; i++) {
@@ -23,7 +24,6 @@ function hoverEffect(e) {
 }
 
 function mouseHover() {
-  const square = document.querySelectorAll("#square");
   square.forEach((item) => {
     item.addEventListener("mouseover", (e) => {
       hoverEffect(e);
