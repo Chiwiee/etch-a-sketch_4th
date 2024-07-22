@@ -2,7 +2,6 @@ const mainContainer = document.querySelector("#main-container");
 const gridContainer = document.querySelector("#grid-container");
 const gridSlider = document.querySelector("#grid-range");
 const textSlider = document.querySelector("#text");
-userInput = 16;
 
 function createSquare() {
   for (let i = 1; i <= userInput * userInput; i++) {
