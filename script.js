@@ -46,13 +46,7 @@ function pickingColor(e) {
   e.target.style.backgroundColor = colorPick.value;
   e.target.style.boxShadow = `0px 0px 5px 1px ${colorPick.value}`;
 }
-function changeColor(e) {
-  if (isMouseDown) {
-    e.target.style.backgroundColor = "red";
-  }
-}
 function mouseHover() {
-  const items = document.querySelectorAll("#item");
   items.forEach((item) => {
     item.addEventListener("mouseover", (e) => {
       if (optionId == "color-picker") {
