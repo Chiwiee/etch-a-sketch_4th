@@ -5,7 +5,7 @@ const textSlider = document.querySelector("#text");
 const enterBtn = document.querySelector("#enter");
 const colorPick = document.querySelector("#favcolor");
 const randomRGB = document.querySelector("#random");
-const progColor = document.querySelector("#prog-color");
+// const progColor = document.querySelector("#prog-color");
 const eraser = document.querySelector("#eraser");
 // const hover = document.querySelector("#hover");
 // const hold = document.querySelector("#hold");
@@ -59,7 +59,6 @@ function getButtonId() {
   btn.forEach((button) => {
     button.addEventListener("click", () => {
       mouseHover(button.id);
-      console.log(button.id);
     });
   });
 }
@@ -82,10 +81,9 @@ function generateItems() {
 }
 
 console.log(colorPick);
-console.log(progColor);
+// console.log(progColor);
 console.log(eraser);
 console.log(randomRGB);
 // console.log(hover);
 // console.log(hold);
 console.log(gridContainer);
-progColor.disabled = true;
