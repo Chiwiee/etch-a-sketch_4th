@@ -25,7 +25,6 @@ function createItems() {
     gridContainer.appendChild(item);
   }
 }
-createItems();
 function divideBySliderValue() {
   return 100 / gridSlider.value;
 }
@@ -51,23 +50,30 @@ function changeColor(e) {
     e.target.style.backgroundColor = "red";
   }
 }
-function mouseHover(id) {
+function mouseHover() {
   const items = document.querySelectorAll("#item");
   items.forEach((item) => {
     item.addEventListener("mouseover", (e) => {
-      if (id == "color-picker") {
+      if (optionId == "color-picker") {
         pickingColor(e);
-      } else if (id == "random") {
+      } else if (optionId == "random") {
         randomColor(e);
-      } else if (id == "eraser") {
-        colorWhite(e);
+      } else if (optionId == "eraser") {
+        eraserColor(e);
       } else {
         e.target.style.backgroundColor = "#000000";
       }
     });
   });
 }
-mouseHover();
+
+// if (modeId == "hover") {
+// } else if (modeId == "hold") {
+//   if (!isMouseDown) return;
+//   mouseHover();
+// }
+// }
+
 function getButtonId() {
   option.forEach((button) => {
     button.addEventListener("click", () => (optionId = button.id));
@@ -101,7 +107,10 @@ function mouseEvent() {
     console.log(isMouseDown);
   });
 }
+// mouseMode();
+createItems();
 mouseEvent();
+mouseHover();
 getButtonId();
 showGridSliderValue();
 
