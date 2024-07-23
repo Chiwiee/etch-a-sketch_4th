@@ -105,10 +105,14 @@ mouseEvent();
 getButtonId();
 showGridSliderValue();
 
-console.log(colorPick);
-console.log(border);
-console.log(eraser);
-console.log(randomRGB);
-console.log(hover);
-console.log(hold);
-console.log(gridContainer);
+window.addEventListener("keydown", () => {
+  console.log(colorPick);
+  console.log(border);
+  console.log(eraser);
+  console.log(randomRGB);
+  console.log(hover);
+  console.log(hold);
+  console.log(gridContainer);
+  console.log(`OptionId: ${optionId}`);
+  console.log(`ModeId: ${modeId}`);
+});
