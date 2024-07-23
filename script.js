@@ -69,10 +69,11 @@ function mouseHover(id) {
 }
 mouseHover();
 function getButtonId() {
-  btn.forEach((button) => {
-    button.addEventListener("click", () => {
-      mouseHover(button.id);
-    });
+  option.forEach((button) => {
+    button.addEventListener("click", () => (optionId = button.id));
+  });
+  mode.forEach((button) => {
+    button.addEventListener("click", () => (modeId = button.id));
   });
 }
 function showGridSliderValue() {
