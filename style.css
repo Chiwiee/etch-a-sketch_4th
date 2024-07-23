@@ -15,6 +15,7 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 900px;
+  width: 1300px;
 }
 #option-container {
   display: flex;
