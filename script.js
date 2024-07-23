@@ -69,7 +69,7 @@ function mouseHover() {
           eraserColor(e);
         }
       } else {
-        e.target.style.backgroundColor = colorPick.value;
+        pickingColor(e);
       }
     });
   });
