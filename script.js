@@ -122,10 +122,10 @@ function mouseEvent() {
   });
 }
 createItems();
-mouseEvent();
 mouseHover();
 getButtonId();
 showGridSliderValue();
+mouseEvent();
 
 window.addEventListener("keydown", () => {
   console.log(colorPick);
