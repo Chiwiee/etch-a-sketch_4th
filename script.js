@@ -27,6 +27,9 @@ function createItems() {
     gridContainer.appendChild(item);
   }
 }
+createItems();
+const items = document.querySelectorAll("#item");
+
 function eraserColor(e) {
   e.target.style.backgroundColor = "";
   e.target.style.boxShadow = "";
@@ -137,7 +140,6 @@ function mouseEvent() {
   });
 }
 addBorder();
-createItems();
 mouseEvent();
 mouseHover();
 getButtonId();
