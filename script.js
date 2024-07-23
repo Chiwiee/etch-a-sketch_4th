@@ -112,13 +112,12 @@ function generateItems() {
   removeBorder();
 }
 function mouseEvent() {
-  window.document.addEventListener("mousedown", () => {
+  // This eventlisteners are from stackoverflow but the condition in mouseHover is my solution
+  document.addEventListener("mousedown", () => {
     isMouseDown = true;
-    console.log(isMouseDown);
   });
-  window.document.addEventListener("mouseup", () => {
+  document.addEventListener("mouseup", () => {
     isMouseDown = false;
-    console.log(isMouseDown);
   });
 }
 createItems();

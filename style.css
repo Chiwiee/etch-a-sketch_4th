@@ -34,6 +34,8 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: 32px;
+  text-align: center;
+  width: 100%;
 }
 #box-container {
   display: flex;
