@@ -14,7 +14,7 @@ const option = document.querySelectorAll(".option");
 const mode = document.querySelectorAll(".mode");
 
 let isMouseDown;
-let optionId;
+let optionId = "color-picker";
 let modeId = "hover";
 
 function createItems() {
@@ -68,8 +68,6 @@ function mouseHover() {
           if (!isMouseDown) return;
           eraserColor(e);
         }
-      } else {
-        pickingColor(e);
       }
     });
   });
