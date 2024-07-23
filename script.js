@@ -83,7 +83,6 @@ function getButtonId() {
   });
 }
 
-// function addBorder() {
 function showBorder() {
   const items = document.querySelectorAll("#item");
   items.forEach((item) => {
