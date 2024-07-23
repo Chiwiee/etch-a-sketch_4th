@@ -37,6 +37,7 @@ function randomColor(e) {
 }
 function pickingColor(e) {
   e.target.style.backgroundColor = colorPick.value;
+  e.target.style.boxShadow = colorPick.value;
 }
 function mouseHover(id) {
   const items = document.querySelectorAll("#item");
