@@ -24,8 +24,9 @@ function divideBySliderValue() {
   return 100 / gridSlider.value;
 }
 
-function colorWhite(e) {
-  e.target.style.backgroundColor = "white";
+function eraserColor(e) {
+  e.target.style.backgroundColor = "";
+  e.target.style.boxShadow = "";
 }
 function randomColor(e) {
   const red = Math.floor(Math.random() * 256) + 1;
@@ -78,7 +79,7 @@ function generateItems() {
   createItems();
   mouseHover();
 }
-mouseHover();
+mouseEvent();
 getButtonId();
 showGridSliderValue();
 
