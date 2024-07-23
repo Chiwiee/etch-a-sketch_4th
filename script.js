@@ -33,11 +33,11 @@ function randomColor(e) {
   const blue = Math.floor(Math.random() * 256) + 1;
 
   e.target.style.backgroundColor = `rgb(${red},${green},${blue})`;
-  e.target.style.boxShadow = `0px 0px 3px 1px rgb(${red},${green},${blue})`;
+  e.target.style.boxShadow = `0px 0px 5px 1px rgb(${red},${green},${blue})`;
 }
 function pickingColor(e) {
   e.target.style.backgroundColor = colorPick.value;
-  e.target.style.boxShadow = colorPick.value;
+  e.target.style.boxShadow = `0px 0px 5px 1px ${colorPick.value}`;
 }
 function mouseHover(id) {
   const items = document.querySelectorAll("#item");
