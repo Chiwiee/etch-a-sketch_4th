@@ -15,7 +15,7 @@ const mode = document.querySelectorAll(".mode");
 
 let isMouseDown;
 let optionId;
-let modeId;
+let modeId = "hover";
 
 function createItems() {
   for (let i = 1; i <= gridSlider.value * gridSlider.value; i++) {
