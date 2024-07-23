@@ -72,7 +72,7 @@ body {
   flex-wrap: wrap;
   height: 600px;
   width: 600px;
-  border: 6px inset #5d6062;
+  border: 3px solid #5d6062;
 }
 #grid-container > #item {
   flex-grow: 1;
