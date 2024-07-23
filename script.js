@@ -99,6 +99,7 @@ function showGridSliderValue() {
   textSlider.textContent = `${gridSlider.value} x ${gridSlider.value}`;
   gridSlider.oninput = function () {
     textSlider.textContent = `${gridSlider.value} x ${gridSlider.value}`;
+    generateItems();
   };
 }
 
