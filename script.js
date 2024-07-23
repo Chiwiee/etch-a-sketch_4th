@@ -86,7 +86,6 @@ function getButtonId() {
 }
 
 function addBorder() {
-  //
   function showBorder() {
     items.forEach((item) => {
       item.style.border = "1px solid black";
