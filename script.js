@@ -20,16 +20,13 @@ let borderStatus = false;
 
 function createItems() {
   for (let i = 1; i <= gridSlider.value * gridSlider.value; i++) {
+    let value = 100 / gridSlider.value;
     const item = document.createElement("div");
     item.id = "item";
-    item.style.flexBasis = `${divideBySliderValue()}%`;
+    item.style.flexBasis = `${value}%`;
     gridContainer.appendChild(item);
   }
 }
-function divideBySliderValue() {
-  return 100 / gridSlider.value;
-}
-
 function eraserColor(e) {
   e.target.style.backgroundColor = "";
   e.target.style.boxShadow = "";
