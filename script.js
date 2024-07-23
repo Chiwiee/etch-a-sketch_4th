@@ -11,6 +11,8 @@ const eraser = document.querySelector("#eraser");
 // const hold = document.querySelector("#hold");
 const btn = document.querySelectorAll("button");
 
+let isMouseDown;
+
 function createItems() {
   for (let i = 1; i <= gridSlider.value * gridSlider.value; i++) {
     const item = document.createElement("div");
@@ -40,6 +42,11 @@ function pickingColor(e) {
   e.target.style.backgroundColor = colorPick.value;
   e.target.style.boxShadow = `0px 0px 5px 1px ${colorPick.value}`;
 }
+function changeColor(e) {
+  if (isMouseDown) {
+    e.target.style.backgroundColor = "red";
+  }
+}
 function mouseHover(id) {
   const items = document.querySelectorAll("#item");
   items.forEach((item) => {
@@ -56,7 +63,7 @@ function mouseHover(id) {
     });
   });
 }
-
+mouseHover();
 function getButtonId() {
   btn.forEach((button) => {
     button.addEventListener("click", () => {
@@ -78,6 +85,16 @@ function generateItems() {
   }
   createItems();
   mouseHover();
+}
+function mouseEvent() {
+  window.document.addEventListener("mousedown", () => {
+    isMouseDown = true;
+    console.log(isMouseDown);
+  });
+  window.document.addEventListener("mouseup", () => {
+    isMouseDown = false;
+    console.log(isMouseDown);
+  });
 }
 mouseEvent();
 getButtonId();
