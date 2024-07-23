@@ -41,7 +41,15 @@ function mouseHover(id) {
   const items = document.querySelectorAll("#item");
   items.forEach((item) => {
     item.addEventListener("mouseover", (e) => {
-      pickingColor(e);
+      if (id == "color-picker") {
+        pickingColor(e);
+      } else if (id == "random") {
+        randomColor(e);
+      } else if (id == "eraser") {
+        colorWhite(e);
+      } else {
+        e.target.style.backgroundColor = "#000000";
+      }
     });
   });
 }
@@ -51,6 +59,7 @@ function getButtonId() {
   btn.forEach((button) => {
     button.addEventListener("click", () => {
       mouseHover(button.id);
+      console.log(button.id);
     });
   });
 }
