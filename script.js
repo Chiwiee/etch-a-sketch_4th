@@ -37,7 +37,7 @@ function randomColor(e) {
 function pickingColor(e) {
   e.target.style.backgroundColor = colorPick.value;
 }
-function mouseHover() {
+function mouseHover(id) {
   const items = document.querySelectorAll("#item");
   items.forEach((item) => {
     item.addEventListener("mouseover", (e) => {
@@ -46,6 +46,15 @@ function mouseHover() {
   });
 }
 mouseHover();
+
+function getButtonId() {
+  btn.forEach((button) => {
+    button.addEventListener("click", () => {
+      mouseHover(button.id);
+    });
+  });
+}
+getButtonId();
 function showGridSliderValue() {
   textSlider.textContent = `${gridSlider.value} x ${gridSlider.value}`;
   gridSlider.oninput = function () {
