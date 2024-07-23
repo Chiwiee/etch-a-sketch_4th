@@ -53,7 +53,6 @@ function mouseHover(id) {
     });
   });
 }
-mouseHover();
 
 function getButtonId() {
   btn.forEach((button) => {
@@ -62,7 +61,6 @@ function getButtonId() {
     });
   });
 }
-getButtonId();
 function showGridSliderValue() {
   textSlider.textContent = `${gridSlider.value} x ${gridSlider.value}`;
   gridSlider.oninput = function () {
@@ -70,7 +68,6 @@ function showGridSliderValue() {
     generateItems();
   };
 }
-showGridSliderValue();
 
 function generateItems() {
   while (gridContainer.hasChildNodes()) {
@@ -79,6 +76,9 @@ function generateItems() {
   createItems();
   mouseHover();
 }
+mouseHover();
+getButtonId();
+showGridSliderValue();
 
 console.log(colorPick);
 // console.log(progColor);
