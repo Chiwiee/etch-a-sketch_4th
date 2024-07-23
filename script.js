@@ -5,10 +5,10 @@ const textSlider = document.querySelector("#text");
 const enterBtn = document.querySelector("#enter");
 const colorPick = document.querySelector("#favcolor");
 const randomRGB = document.querySelector("#random");
-// const progColor = document.querySelector("#prog-color");
+const border = document.querySelector("#border");
 const eraser = document.querySelector("#eraser");
-// const hover = document.querySelector("#hover");
-// const hold = document.querySelector("#hold");
+const hover = document.querySelector("#hover");
+const hold = document.querySelector("#hold");
 const btn = document.querySelectorAll("button");
 
 let isMouseDown;
@@ -101,9 +101,9 @@ getButtonId();
 showGridSliderValue();
 
 console.log(colorPick);
-// console.log(progColor);
+console.log(border);
 console.log(eraser);
 console.log(randomRGB);
-// console.log(hover);
-// console.log(hold);
+console.log(hover);
+console.log(hold);
 console.log(gridContainer);
