@@ -55,7 +55,7 @@ body {
   border: none;
   border-radius: 25px;
   color: #ffff;
-  background-color: #000000;
+  background-color: rgb(80, 80, 80);
 }
 #title > div {
   color: #ffff;
