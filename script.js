@@ -10,6 +10,8 @@ const eraser = document.querySelector("#eraser");
 const hover = document.querySelector("#hover");
 const hold = document.querySelector("#hold");
 const btn = document.querySelectorAll("button");
+const option = document.querySelectorAll(".option");
+const mode = document.querySelectorAll(".mode");
 
 let isMouseDown;
 
