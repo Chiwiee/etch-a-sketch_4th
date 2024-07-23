@@ -7,8 +7,8 @@ const colorPick = document.querySelector("#favcolor");
 const randomRGB = document.querySelector("#random");
 const progColor = document.querySelector("#prog-color");
 const eraser = document.querySelector("#eraser");
-const hover = document.querySelector("#hover");
-const hold = document.querySelector("#hold");
+// const hover = document.querySelector("#hover");
+// const hold = document.querySelector("#hold");
 const btn = document.querySelectorAll("button");
 
 function createItems() {
@@ -67,7 +67,7 @@ console.log(colorPick);
 console.log(progColor);
 console.log(eraser);
 console.log(randomRGB);
-console.log(hover);
-console.log(hold);
+// console.log(hover);
+// console.log(hold);
 console.log(gridContainer);
 progColor.disabled = true;
