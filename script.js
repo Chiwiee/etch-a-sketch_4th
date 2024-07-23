@@ -16,6 +16,7 @@ const mode = document.querySelectorAll(".mode");
 let isMouseDown;
 let optionId;
 let modeId;
+let borderStatus = false;
 
 function createItems() {
   for (let i = 1; i <= gridSlider.value * gridSlider.value; i++) {
@@ -89,6 +90,30 @@ function getButtonId() {
     button.addEventListener("click", () => (modeId = button.id));
   });
 }
+
+function addBorder() {
+  //
+  function showBorder() {
+    items.forEach((item) => {
+      item.style.border = "1px solid black";
+    });
+  }
+  function removeBorder() {
+    items.forEach((item) => {
+      item.style.border = "";
+    });
+  }
+  border.addEventListener("click", () => {
+    if (borderStatus == false) {
+      borderStatus = true;
+      showBorder();
+    } else if (borderStatus == true) {
+      borderStatus = false;
+      removeBorder();
+    }
+  });
+}
+
 function showGridSliderValue() {
   textSlider.textContent = `${gridSlider.value} x ${gridSlider.value}`;
   gridSlider.oninput = function () {
@@ -114,7 +139,7 @@ function mouseEvent() {
     console.log(isMouseDown);
   });
 }
-// mouseMode();
+addBorder();
 createItems();
 mouseEvent();
 mouseHover();
