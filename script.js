@@ -27,8 +27,6 @@ function createItems() {
     gridContainer.appendChild(item);
   }
 }
-createItems();
-const items = document.querySelectorAll("#item");
 
 function eraserColor(e) {
   e.target.style.backgroundColor = "";
@@ -47,6 +45,7 @@ function pickingColor(e) {
   e.target.style.boxShadow = `0px 0px 5px 1px ${colorPick.value}`;
 }
 function mouseHover() {
+  const items = document.querySelectorAll("#item");
   items.forEach((item) => {
     item.addEventListener("mouseover", (e) => {
       if (optionId == "color-picker") {
@@ -85,28 +84,19 @@ function getButtonId() {
   });
 }
 
-function addBorder() {
-  function showBorder() {
-    items.forEach((item) => {
-      item.style.border = "1px solid black";
-    });
-  }
-  function removeBorder() {
-    items.forEach((item) => {
-      item.style.border = "";
-    });
-  }
-  border.addEventListener("click", () => {
-    if (borderStatus == false) {
-      borderStatus = true;
-      showBorder();
-    } else if (borderStatus == true) {
-      borderStatus = false;
-      removeBorder();
-    }
+// function addBorder() {
+function showBorder() {
+  const items = document.querySelectorAll("#item");
+  items.forEach((item) => {
+    item.style.border = `1px solid ${colorPick.value}`;
   });
 }
-
+function removeBorder() {
+  const items = document.querySelectorAll("#item");
+  items.forEach((item) => {
+    item.style.border = "";
+  });
+}
 function showGridSliderValue() {
   textSlider.textContent = `${gridSlider.value} x ${gridSlider.value}`;
   gridSlider.oninput = function () {
@@ -121,6 +111,7 @@ function generateItems() {
   }
   createItems();
   mouseHover();
+  removeBorder();
 }
 function mouseEvent() {
   window.document.addEventListener("mousedown", () => {
@@ -132,7 +123,7 @@ function mouseEvent() {
     console.log(isMouseDown);
   });
 }
-addBorder();
+createItems();
 mouseEvent();
 mouseHover();
 getButtonId();
