@@ -55,25 +55,32 @@ function mouseHover() {
   items.forEach((item) => {
     item.addEventListener("mouseover", (e) => {
       if (optionId == "color-picker") {
-        pickingColor(e);
+        if (modeId == "hover") {
+          pickingColor(e);
+        } else if (modeId == "hold") {
+          if (!isMouseDown) return;
+          pickingColor(e);
+        }
       } else if (optionId == "random") {
-        randomColor(e);
+        if (modeId == "hover") {
+          randomColor(e);
+        } else if (modeId == "hold") {
+          if (!isMouseDown) return;
+          randomColor(e);
+        }
       } else if (optionId == "eraser") {
-        eraserColor(e);
+        if (modeId == "hover") {
+          eraserColor(e);
+        } else if (modeId == "hold") {
+          if (!isMouseDown) return;
+          eraserColor(e);
+        }
       } else {
         e.target.style.backgroundColor = "#000000";
       }
     });
   });
 }
-
-// if (modeId == "hover") {
-// } else if (modeId == "hold") {
-//   if (!isMouseDown) return;
-//   mouseHover();
-// }
-// }
-
 function getButtonId() {
   option.forEach((button) => {
     button.addEventListener("click", () => (optionId = button.id));
