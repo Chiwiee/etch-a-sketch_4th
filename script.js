@@ -1,15 +1,8 @@
-const mainContainer = document.querySelector("#main-container");
 const gridContainer = document.querySelector("#grid-container");
 const gridSlider = document.querySelector("#grid-range");
 const textSlider = document.querySelector("#text");
-const enterBtn = document.querySelector("#enter");
 const colorPick = document.querySelector("#favcolor");
-const randomRGB = document.querySelector("#random");
-const border = document.querySelector("#border");
-const eraser = document.querySelector("#eraser");
-const hover = document.querySelector("#hover");
-const hold = document.querySelector("#hold");
-const btn = document.querySelectorAll("button");
+
 const option = document.querySelectorAll(".option");
 const mode = document.querySelectorAll(".mode");
 
